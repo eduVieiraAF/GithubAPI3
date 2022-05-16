@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GitHubAPI3</string>
+    <string name="app_title">Github repos</string>
+    <string name="repo_title">Name of Repository</string>
+    <string name="repo_author">Created by</string>
+    <string name="repo_description">The description of a repo tells the public what is contained
+        in the repo itself. If you have multiple repositories for the same project,
+        it\'s better to describe what is contained in the repo itself instead of describing the
+        project</string>
+    <string name="star_count">4506</string>
+    <string name="fork_count">1258</string>
+    <string name="description_fab">Search for repository</string>
+    <string name="current_search">Current search: kotlin</string>
+</resources>

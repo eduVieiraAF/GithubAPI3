@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_tiny"
+    android:elevation="1dp"
+    app:cardBackgroundColor="@color/blissful_blue"
+    app:cardCornerRadius="@dimen/card_radius_medium"
+    app:strokeColor="@color/white"
+    app:strokeWidth="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_user"
+            android:layout_width="@dimen/circular_image_size"
+            android:layout_height="@dimen/circular_image_size"
+            android:layout_margin="@dimen/spacing_tiny"
+            android:padding="@dimen/spacing_tiny"
+            android:src="@drawable/github"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/Circular"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1.5dp"/>
+
+        <TextView
+            android:id="@+id/tv_repo_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_tiny"
+            android:paddingStart="@dimen/spacing_small"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/prussian_blue"
+            android:textSize="@dimen/text_title"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tv_author"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_user"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/repo_title"/>
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/spacing_small"
+            android:layout_margin="@dimen/spacing_tiny"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/prussian_blue"
+            android:textSize="@dimen/text_subtitle"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_user"
+            app:layout_constraintTop_toBottomOf="@id/tv_repo_title"
+            tools:text="@string/repo_author"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_tiny"
+            android:maxLines="3"
+            android:padding="@dimen/spacing_tiny"
+            android:textAlignment="center"
+            android:textColor="@color/deep_blue"
+            android:textSize="@dimen/text_body"
+            android:textStyle="italic"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_user"
+            tools:text="@string/repo_description"/>
+
+        <ImageView
+            android:id="@+id/iv_star"
+            android:layout_width="@dimen/icon_height"
+            android:layout_height="@dimen/icon_width"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:src="@drawable/star"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_star_count"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_description"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+
+        <TextView
+            android:id="@+id/tv_star_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_medium"
+            android:textColor="@color/deep_blue"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_star"
+            app:layout_constraintTop_toBottomOf="@id/tv_description"
+            tools:text="@string/star_count"/>
+
+        <ImageView
+            android:id="@+id/iv_fork"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:layout_margin="@dimen/spacing_medium"
+            android:src="@drawable/fork"
+            app:layout_constraintTop_toBottomOf="@id/tv_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_fork_count"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/tv_fork_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:textColor="@color/deep_blue"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_description"
+            tools:text="@string/fork_count"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
+
+
+
