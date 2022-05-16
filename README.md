@@ -10,5 +10,6 @@
 - Endless scrolling (through manual pagination);
 - Swipe to refresh;
 - Screen rotation without losing state;
+- Simple animation.
 
 ## </> Coded using Retrofit, Dagger, Coroutines, MVVM and Glide.
