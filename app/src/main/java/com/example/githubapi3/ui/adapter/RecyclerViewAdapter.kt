@@ -11,13 +11,6 @@ class RecyclerViewAdapter : RecyclerView.Adapter<MyViewHolder>() {
 
     private var listData = mutableListOf<RepoVO>()
 
-    /* @SuppressLint("NotifyDataSetChanged")
-     fun setUpdatedData(listData: List<RecyclerData>) {
-         this.listData?.clear()
-         this.listData?.addAll(listData)
-         notifyDataSetChanged()
-     }*/
-
     fun addUpdatedList(listData: List<RepoVO>) {
 
         val position = this.listData.size
@@ -45,7 +38,6 @@ class RecyclerViewAdapter : RecyclerView.Adapter<MyViewHolder>() {
         this.listData.clear()
         notifyItemRangeRemoved(0, size)
     }
-
 }
 
 

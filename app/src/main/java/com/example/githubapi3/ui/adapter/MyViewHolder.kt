@@ -10,8 +10,6 @@ import com.example.githubapi3.R
 import com.example.githubapi3.ui.model.RepoVO
 
 class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-
-
     private val imageAvatar = view.findViewById<ImageView>(R.id.iv_user)
     private val repoTitle = view.findViewById<TextView>(R.id.tv_repo_title)
     private val author = view.findViewById<TextView>(R.id.tv_author)

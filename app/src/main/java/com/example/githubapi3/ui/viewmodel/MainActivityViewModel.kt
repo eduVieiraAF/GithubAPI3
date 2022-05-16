@@ -31,7 +31,6 @@ class MainActivityViewModel(application: Application) : AndroidViewModel(applica
 
     fun getLiveObserver(): LiveData<List<RepoVO>> = liveDataList
 
-
     fun makeApiCall(queryParam: String = lastQueryParam, pagination: Boolean) {
 
         if (isLoading) return

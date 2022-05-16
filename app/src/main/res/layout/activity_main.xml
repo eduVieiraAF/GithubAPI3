@@ -19,6 +19,7 @@
         app:cardCornerRadius="@dimen/card_radius_small"
         app:strokeWidth="2dp"
         app:strokeColor="@color/deep_blue"
+        android:layoutAnimation="@anim/layout_animation"
         android:backgroundTint="@color/white">
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -90,7 +91,6 @@
         android:textColor="@color/prussian_blue"
         android:textSize="@dimen/text_body"
         android:layout_gravity="center" />
-
 
     <View
         android:id="@+id/divider"
