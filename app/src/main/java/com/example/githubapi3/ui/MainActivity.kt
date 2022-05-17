@@ -22,7 +22,6 @@ import com.example.githubapi3.ui.adapter.RecyclerViewAdapter
 import com.example.githubapi3.ui.viewmodel.MainActivityViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var recyclerViewAdapter: RecyclerViewAdapter
@@ -88,6 +87,7 @@ class MainActivity : AppCompatActivity() {
         swipeLayout.setOnRefreshListener {
             recyclerViewAdapter.resetList()
             mainActivityViewModel.makeApiCall(pagination = false)
+            Toast.makeText(this, "Data has been refreshed", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -120,7 +120,14 @@ class MainActivity : AppCompatActivity() {
             searchView.setOnEditorActionListener { _, actionId, _ ->
                 if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                     newQuery(searchView.text.toString())
+
                     searchView.hideKeyboard()
+
+                    Toast.makeText(
+                        this, "New search: ${searchView.text}",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
                     true
                 } else false
             }
