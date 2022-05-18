@@ -7,6 +7,7 @@
 - Stars;
 - Forks;
 - Author's name;
+- Description of repository;
 - Endless scrolling (through manual pagination);
 - Swipe to refresh;
 - Screen rotation without losing state;
