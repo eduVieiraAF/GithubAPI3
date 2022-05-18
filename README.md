@@ -11,6 +11,7 @@
 - Swipe to refresh;
 - Screen rotation without losing state;
 - Simple animation;
-- A couple of tests.
+- A couple of tests;
+- SplashScreen.
 
 ## </> Coded using Coroutines, Dagger, Glide, , MVVM and Retrofit2.
