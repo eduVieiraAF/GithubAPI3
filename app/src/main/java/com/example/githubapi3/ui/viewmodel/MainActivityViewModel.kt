@@ -4,9 +4,9 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.githubapi3.data.model.RepoList
-import com.example.githubapi3.data.api.RetroServiceInterface
 import com.example.githubapi3.MyApplication
+import com.example.githubapi3.data.api.RetroServiceInterface
+import com.example.githubapi3.data.model.RepoList
 import com.example.githubapi3.ui.model.RepoVO
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

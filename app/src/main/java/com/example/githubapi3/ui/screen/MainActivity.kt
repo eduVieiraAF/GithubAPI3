@@ -1,4 +1,4 @@
-package com.example.githubapi3.ui
+package com.example.githubapi3.ui.screen
 
 import android.annotation.SuppressLint
 import android.content.Context

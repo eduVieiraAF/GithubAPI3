@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.githubapi3.R
-import com.example.githubapi3.data.model.RepoData
 import com.example.githubapi3.ui.model.RepoVO
 
 class RecyclerViewAdapter : RecyclerView.Adapter<MyViewHolder>() {
